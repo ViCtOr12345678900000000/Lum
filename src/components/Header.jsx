@@ -9,7 +9,7 @@ export default function Header({ cartCount, favoritesCount, activeView, onNaviga
       <h1 className="text-[13px] font-bold tracking-[0.2em] shrink-0">LUMINA HAUS</h1>
 
       {/* CENTER - Nav - now truly centralized */}
-      <nav className="hidden md:flex items-center gap-3 text-[11px] tracking-[0.15em] absolute left-1/2 -translate-x-1/2">
+      <nav className="hidden md:flex items-center gap-1 text-[11px] tracking-[0.15em] absolute left-1/2 -translate-x-1/2">
         <button onClick={() => onNavigate('overview')} className={linkClass('overview')}>OVERVIEW</button><span className="text-[9px] text-white/30">•</span>
         <button onClick={() => onNavigate('configure')} className={linkClass('configure')}>CONFIGURE</button><span className="text-[9px] text-white/30">•</span>
         <button onClick={() => onNavigate('materials')} className={linkClass('materials')}>MATERIALS</button><span className="text-[9px] text-white/30">•</span>

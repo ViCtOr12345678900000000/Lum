@@ -37,7 +37,7 @@ export default function MaterialSelector({ materials, selectedId, onSelect, fini
       </div>
 
       {/* SCROLLABLE CARDS - fixed scroll bug */}
-      <div className="flex-1 overflow-y-auto px-3 pb-3 space-y-2">
+      <div className="flex-1 overflow-x-scroll px-3 pb-3 space-y-2">
         {materials.map((m) => {
           const isSelected = selectedId === m.id
           return (
